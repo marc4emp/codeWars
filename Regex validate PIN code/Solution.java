@@ -1,17 +1,11 @@
 public class Solution {
 
     public static boolean validatePin(String pin) {
-
-        try {
-            int pinToInt = Integer.parseInt(pin);
-        }
-        catch (NumberFormatException e)
-        {
+        
+        if (pin.matches("[0-9]+") && (pin.length() == 4 || pin.length() == 6)) {
+            return true;
+        } else {
             return false;
         }
-
-        if (pin.length() == 4 || pin.length() == 6) {
-            return true;
-        } else return false;
     }
 }
