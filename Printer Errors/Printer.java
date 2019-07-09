@@ -1,3 +1,5 @@
+//MY SOLUTION:
+
 public class Printer {
     public static String printerError(String s) {
 
@@ -26,3 +28,16 @@ public class Printer {
         return totalErrors;
     }
 }
+
+
+
+
+//BEST SOLUTION FOUND
+/*
+public class Printer {
+    
+    public static String printerError(String s) {
+        return s.replaceAll("[a-m]", "").length() + "/" + s.length();
+    }
+}
+*/
